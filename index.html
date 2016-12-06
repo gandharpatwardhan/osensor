@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet"/>
+    <!--<link rel="stylesheet" src="js/angularchart.css" />-->
+      
+      <link rel="stylesheet" href="lib/swiper/dist/css/swiper.min.css">
+      
+    <link href="lib/ionic-datetime-picker/dist/style.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="js/Chart.js"></script>
+    <!-- cordova script (this will be a 404 during development) -->
+    
+    <script src="js/angular-chart.js"></script>
+
+      
+      <!-- Swiper js-->
+      
+      <script src="lib/swiper/dist/js/swiper.js"></script>
+    <!--<script src="lib/angular/angular.js"></script>-->
+    <script src="lib/angular-swiper/dist/angular-swiper.js"></script>
+      
+      <!-- Swiper js-->
+      <script src="js/ionic.native.js"></script>
+    <script src="js/ng-cordova.min.js"></script>
+    
+      
+    <script src="cordova.js"></script>
+      
+      <script src="js/ngStorage.js"></script>
+      
+      
+    
+     
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+    <!--<link href="css/main.css" rel="stylesheet"/>-->
+
+    <style type="text/css">
+      .platform-ios .manual-ios-statusbar-padding{
+        padding-top:20px;
+      }
+      .manual-remove-top-padding{
+        padding-top:0px; 
+      }
+      .manual-remove-top-padding .scroll{
+        padding-top:0px !important;
+      }
+      ion-list.manual-list-fullwidth div.list, .list.card.manual-card-fullwidth {
+        margin-left:-10px;
+        margin-right:-10px;
+      }
+      ion-list.manual-list-fullwidth div.list > .item, .list.card.manual-card-fullwidth > .item {
+        border-radius:0px;
+        border-left:0px;
+        border-right: 0px;
+      }
+        
+    .padding_30px {
+      padding:30px;
+      text-align:center;
+    }
+    .large-button {
+      height: 20vh !important;
+        width: 35%;
+        font-size: 20vh;
+        text-align:center;
+        background: #b2b2b2;
+      }
+    .small-button{
+        height: 10vh !important;
+        width: 50%;
+        font-size: 5vh;
+        text-align:center;
+    }
+    .icon_custom {
+      font-size:40px;
+      padding:10px;
+    }
+    .bg_red {
+    background: #FF0000;
+    }
+    .bg_orange {
+    background: #FF5733;
+    }
+    .bg_yellow {
+    background: #FFFF00;
+    }
+    .bg_lime {
+    background: #00FF00;
+    }
+    .bg_green {
+    background: #008000;
+    }
+    .bg_blue {
+    background: #0000FF;
+    }
+    .bg_violet {
+    background: #800080;
+    }
+        
+    .mymodal {  
+     width: 80%; 
+     height: 50%; 
+     top: 5%; 
+     left: 10%; 
+     right: 15%; 
+     bottom: 15%;
+    
+  }
+        
+        
+    .swiper-container {
+        width: 100%;
+        height: 30%;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+    .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    } 
+    
+        .swipebg{
+            background-color: whitesmoke;
+        }
+    </style>
+      
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/directives.js"></script>
+    <script src="js/services.js"></script>
+    
+  <!--
+    <script src="lib/ionic-datetime-picker/dist/templates.js"></script>
+    <script src="lib/ionic-datetime-picker/dist/ionic-datetimepicker.js"></script>  
+  -->
+   <script src="lib/onezone-datepicker/dist/onezone-datepicker.min.js"></script>
+
+    <!-- Only required for Tab projects w/ pages in multiple tabs 
+    <script src="lib/ionicuirouter/ionicUIRouter.js"></script>
+    -->
+
+  </head>
+  <body ng-app="app" animation="slide-left-right-ios7">
+  <div>
+    <div>
+        <ion-nav-bar class="bar-energized">
+            <!--<ion-nav-back-button class="button-icon icon ion-ios-arrow-back">Back</ion-nav-back-button>-->
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+    </div>
+</div>
+  </body>
+</html>

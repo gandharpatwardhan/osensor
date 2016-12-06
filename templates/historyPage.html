@@ -1,0 +1,40 @@
+<ion-view title="History Page" id="page3">
+    <!--<ion-content style="background: url(img/bg1.jpg) no-repeat center;background-size:cover;" padding="true" class="has-header">-->
+    <ion-content padding="true" class="has-header">
+        <!--<form id="historyPage-form6" class="list ">
+            <label class="item item-select " id="historyPage-select1">
+                <span class="input-label">Date</span>
+                <select></select>
+            </label>
+        </form>-->
+        <!--<div class="spacer" style="width: 100px; height: 20vh;"></div>-->
+        <!--
+            <div class="center"> <p class="energized">Select a period</p></div>
+    <div class="center">
+        <onezone-datepicker datepicker-object="onezoneDatepicker">
+            <button class="button button-outline button-energized show-onezone-datepicker">
+                From: {{onezoneDatepicker.date | date:'dd-MM-yyyy'}}  </button>
+            </onezone-datepicker>
+        <onezone-datepicker datepicker-object="onezoneDatepickerEnd">
+                <button class="button button-outline button-energized show-onezone-datepicker">
+         To: {{onezoneDatepickerEnd.date | date:'dd-MM-yyyy'}}  
+    </button>
+            
+            <br>
+            
+</onezone-datepicker>
+        </div>-->
+        <div class="spacer" style="width: 300px; height: 30vh;"></div>
+    <!--<canvas id="line" scaleFontColor: "#FFFF00" class="chart chart-line" chart-data="data"
+        chart-labels="labels" chart-series="series" chart-options="options" chart-colors="colours" 
+        chart-dataset-override="datasetOverride" chart-click="onClick">
+    </canvas>-->
+    
+    <canvas id="line" scaleFontColor: "#FFFF00" class="chart chart-line" chart-data="data"
+        chart-labels="labels" chart-series="series" chart-options="options" chart-colors="colours" 
+        chart-dataset-override="datasetOverride" chart-click="onClick">
+    </canvas>
+        <div class="center"><button ui-sref="homePage" class="button button-outline button-energized show-onezone-datepicker">Home</button></div>
+        
+    </ion-content>
+</ion-view>

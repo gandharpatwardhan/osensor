@@ -1,0 +1,63 @@
+<ion-view title="Home Page" id="page1">
+    <!--<ion-content padding="true" style="background: url(img/bg1.jpg) no-repeat center;background-size:cover; height:100vh" class="has-header">-->
+    <ion-content padding="true" class="has-header">
+        
+        <div class="padding">
+            <div class="text-center"><button class='button button-outline button-energized small-button'>{{currPhValue}}</button>
+            <div class="spacer" style="width: 30px; height: 10px;"></div>
+            <p class="energized">Last pH Reading</p>
+                </div>
+        </div>
+        <div>
+        <div class="swipebg">
+       <ks-swiper-container swiper="swiper" on-ready="onReadySwiper(swiper)" override-parameters="{'effect':'coverflow','centeredSlides': 'true','slidesPerView': '7', 'initialSlide':'6', 'setWrapperSize': true, 'coverflow': {
+            'rotate': '50',
+            'stretch': '0',
+            'depth': '100',
+            'modifier': '1',
+            'slideShadows' : true
+        }}">
+            <ks-swiper-slide  swiper="swiper" class="swiper-slide" ng-repeat="s in [1,2,3,4,5,6,7,8,9,10,11,12,13]">
+                <!--<img ng-src="http://api.randomuser.me/portraits/thumb/men/{{s}}.jpg">-->
+                <img ng-src="img/{{s}}.png"></img>
+            </ks-swiper-slide>
+        
+        </ks-swiper-container>
+    </div>
+        </div>
+    <!--<label class="item item-input">
+  <span class="input-label">pH Value</span>
+        <input ng-model="data.val" type="text"/>
+        
+ 
+        
+</label>
+    <button onClick="setSlider()"> Set </button>
+   -->
+    
+    <p class="energized text-center">{{ConnectionStatus}}</p>
+    <div class="spacer" style="width: 10px; height: 3vh;"></div>
+    <button onClick="sendReadCommand()" class="button button-outline button-block button-energized">{{ButtonString}}</button>
+        
+    
+        <div style="height: 50vh">
+        <!--<div class="center"><button ui-sref="historyPage" class="button button-block button-outline button-energized">View History</button> </div>-->
+        <div class="spacer" style="width: 300px; height: 5px;"></div>
+        <!--<a ui-sref="historyPage" id="homePage-button7" class=" button button-assertive  button-block ">View History</a>-->
+        <!--<div class="center"><button ui-sref="historyPage" class="button button-block button-outline button-energized">Recommendation</button> </div>-->
+        <!--<div class="spacer" style="width: 300px; height: 5px;"></div>-->
+        <!--<a ui-sref="historyPage" id="homePage-button7" class=" button button-assertive  button-block ">View History</a>-->
+        
+        
+        <div class="spacer" style="width: 300px; height: 5px;"></div>
+        <!--<a ui-sref="historyPage" id="homePage-button7" class=" button button-assertive  button-block ">View History</a>-->
+        
+        <button ui-sref="settingsPage" class="button button-outline button-block button-energized">Settings</button>
+        <div class="spacer" style="width: 300px; height: 5px;"></div>
+        <div class="button-bar">
+          <button ui-sref="recommendationPage" class="button button-outline button-energized">Recommendation</button>
+          <button ui-sref="aboutUsPage" class="button button-outline button-energized">About Us</button>
+        </div>
+        </div>
+    </ion-content>
+</ion-view>

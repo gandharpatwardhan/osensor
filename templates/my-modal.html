@@ -1,0 +1,25 @@
+<ion-modal-view class="mymodal transparent">
+        <!--<ion-header-bar class="bar-stable">
+            <h3> Connecting to HC-05</h3>
+        </ion-header-bar>-->
+        <ion-content>
+            <div class="card">
+               <div class="item item-divider item-energized">
+                  Unpaired Devices
+               </div>
+               <div class="list">
+                   <a class="item {{isEnabled}}" ng-repeat="device in allDevices" ng-click="connect(device.id,device.name)">{{device.name}}</a>
+               </div>
+            </div>
+            
+            <div class="card">
+               <div class="item item-divider item-energized">
+                  Paired Devices
+               </div>
+               <div class="list">
+                   <a class="item {{isEnabled}}" ng-repeat="device1 in allDevices1" ng-click="connect(device1.id,device1.name)">{{device1.name}}</a>
+               </div>
+
+            </div>
+        </ion-content>
+    </ion-modal-view>
